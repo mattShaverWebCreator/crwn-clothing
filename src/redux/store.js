@@ -9,7 +9,7 @@ import rootReducer from './root-reducer.js';
 
 const middlewares = [];
 
-if (process.env.NODE_END === 'development' {
+if (process.env.NODE_END === 'development') {
     middlewares.push(logger);
 };
 
