@@ -21,11 +21,12 @@ const CollectionItem = ({item, addItem }) => {
                 backgroundImage: `url(${imageUrl})`
             }}
         ></div>
+        <CustomButton onClick={() => addItem(item)} inverted> Add To Cart</CustomButton>
         <div className='collection-footer'>
             <span className='name'>{name}</span>
             <span className='price'>{price}</span>
         </div>
-        <CustomButton onClick={() => addItem(item)} inverted> Add To Cart</CustomButton>
+       
     </div>
     )
 };
