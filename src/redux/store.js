@@ -7,10 +7,11 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
 
-import rootReducer from './root-reducer.js';
+import rootReducer from './root-reducer';
 
 
 const middlewares = [thunk];
+
 
 if (process.env.NODE_END === 'development') {
     middlewares.push(logger);
@@ -20,4 +21,7 @@ if (process.env.NODE_END === 'development') {
 export const store = createStore(rootReducer, applyMiddleware(...middlewares));
 
 export const persistor = persistStore(store);
+
+
+export default { store, persistStore };
 
