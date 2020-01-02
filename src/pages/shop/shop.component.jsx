@@ -7,7 +7,6 @@ import { connect } from 'react-redux';
 import CollectionsOverview from '../../components/collections-overview/collections-overview.component';
 
 
-
 import CollectionPage from '../collection/collection.component';
 
 import { firestore, convertCollectionsSnapshotToMap } from '../../firebase/firebase.utils';
