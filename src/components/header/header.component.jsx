@@ -24,7 +24,9 @@ import { HeaderContainer, LogoContainer, OptionsContainer, OptionLink } from './
 const Header = ({ currentUser, hidden }) =>  (
     <HeaderContainer>
         <LogoContainer>
-            <Logo className='logo' />
+            <OptionLink to='/'>
+                <Logo className='logo' />
+            </OptionLink>
         </LogoContainer>
         <OptionsContainer>
             <OptionLink to='/shop'>
