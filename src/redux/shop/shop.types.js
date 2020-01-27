@@ -4,4 +4,5 @@ const ShopActionTypes = {
     'FETCH_COLLECTIONS_FAILURE': 'FETCH_COLLECTIONS_FAILURE'
 };
 
+
 export default ShopActionTypes;

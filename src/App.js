@@ -20,7 +20,7 @@ import Header from './components/header/header.component';
 
 import { selectCurrentUser } from './redux/user/user.selectors';
 
-import { checkUserSession } from './redux/user.actions';
+import { checkUserSession } from './redux/user/user.actions';
 
 import './App.css';
 
@@ -28,17 +28,7 @@ import './App.css';
 class App extends React.Component {
   unsubscribeFromAuth = null; 
 
-  constructor() {
-    super();
-
-    this.state = {
-      currentUser: null
-    }
-
-  }
-
-  unsubscribeFromAuth = null
-
+  
   componentDidMount() {
     const { checkUserSession } = this.props; 
     checkUserSession(); 

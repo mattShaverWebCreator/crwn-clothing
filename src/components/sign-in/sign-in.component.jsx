@@ -9,7 +9,10 @@ import { connect } from 'react-redux';
 
 import CustomButton from '../custom-button/custom-button.component';
 
-import { googleSignInStart, emailSignInStart  } from '../../redux/user/user.actions.js';
+import { 
+    googleSignInStart, 
+    emailSignInStart  
+} from '../../redux/user/user.actions.js';
 
 
 class SignIn extends React.Component {
@@ -36,7 +39,7 @@ class SignIn extends React.Component {
     handleChange = event => {
         const { value, name } = event.target;
 
-        this.setState({ [name]: value })
+        this.setState({ [name]: value });
     }
 
 
@@ -76,8 +79,9 @@ class SignIn extends React.Component {
 
 
 const mapDispatchToProps = dispatch => ({
-    googleSignInStart: () => dispatch( googleSignInStart()),
-    emailSignInStart: (email, password) => dispatch(emailSignInStart({ email, password }))
+    googleSignInStart: () => dispatch(googleSignInStart()),
+    emailSignInStart: (email, password) => 
+        dispatch(emailSignInStart({ email, password }))
   });
   
 

@@ -13,16 +13,14 @@ const config = {
         appId: "1:838427222916:web:908d8d67955528907a33d1"
 };
 
+firebase.initializeApp(config);
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
         if (!userAuth) return;
 
         const userRef = firestore.doc(`users/${userAuth.uid}`);
-        const collectionRef = firestore.collection('users');
 
         const snapShot = await userRef.get();
-        const collectionSnapshot = await collectionRef.get();
-        console.log({ collectionSnapshot });
 
          if(!snapShot.exists) {
                  const { displayName, email } = userAuth;
@@ -34,21 +32,18 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
                             email,
                             createdAt,
                             ...additionalData    
-                        })
+                        });
                  } catch(error) {
                          console.log('error creating user', error.message);
                  }
          }
 
          return userRef;
-
 };
 
 
 export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
     const collectionRef = firestore.collection(collectionKey);
-    console.log(collectionRef);
-
 
     const batch = firestore.batch();
     objectsToAdd.forEach(obj => {
@@ -56,10 +51,9 @@ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => 
             batch.set(newDocRef, obj);
     });
 
+
     return await batch.commit();
 };
-
-firebase.initializeApp(config);
 
 export const convertCollectionsSnapshotToMap = (collections) => {
         const transformedCollection = collections.docs.map(doc => {
@@ -86,7 +80,7 @@ export const getCurrentUser = () => {
             unsubscribe();
             resolve(userAuth);
         }, reject)
-    })
+    });
 }
 
 
