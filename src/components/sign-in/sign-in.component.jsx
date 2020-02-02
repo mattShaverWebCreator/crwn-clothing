@@ -15,13 +15,11 @@ const SignIn = ({emailSignInStart, googleSignInStart}) => {
 
     const handleSubmit = async event => {
         event.preventDefault();
-
         emailSignInStart(email, password);
     };
 
     const handleChange = event => {
         const {value, name} = event.target;
-        
         setCredentials({
             ...userCredentials,
             [name]: value
@@ -46,11 +44,11 @@ const SignIn = ({emailSignInStart, googleSignInStart}) => {
                     name='password'
                     type='password'
                     value={password}
-                    handleChange={this.handleChange}
+                    handleChange={handleChange}
                     label="password"
                     required/>
                 <div className="buttons">
-                    <CustomButton type="submit">
+                    <CustomButton onClick={handleSubmit} type="submit">
                         Sign In
                     </CustomButton>
                     <CustomButton type='button' onClick={googleSignInStart} isGoogleSignIn>Sign in with Google</CustomButton>
