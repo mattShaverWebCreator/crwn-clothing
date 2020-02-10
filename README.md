@@ -5,17 +5,17 @@ React Hooks, Styled Components.
 
 ### Features:
 
-Ability to add items to cart
-Ability to remove items at checkout
-Updating Cart Inventory
-Cart Window
-Sign In, Sign Out With Google Auth, Email/Pass
+1. Ability to add items to cart
+2. Ability to remove items at checkout
+3. Updating Cart Inventory
+4. Cart Window
+5. Sign In, Sign Out With Google Auth, Email/Pass
 
 ### Not Complete Yet: 
 
-Mobile Styles
-Tablet Styles
-Contact Form
+1. Mobile Styles
+2. Tablet Styles
+3. Contact Form
 
 The Repo is seperated with a release, development branch coming off of master. The release branch deploys to Heroku. 
 
