@@ -2,7 +2,6 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-
 const config = {
         apiKey: "AIzaSyBRjKRPyBOS1XQzVGYVu14nccH7yLin-Fw",
         authDomain: "crwn-clothing-3b764.firebaseapp.com",
@@ -83,16 +82,13 @@ export const getCurrentUser = () => {
     });
 }
 
-
 export const auth = firebase.auth();
 
 export const firestore = firebase.firestore();
 
-
 export const googleProvider = new firebase.auth.GoogleAuthProvider();
 
 googleProvider.setCustomParameters({ prompt: 'select_account' });
-
 
 export const signInWithGoogle = () => auth.signInWithPopup(googleProvider);
 

@@ -9,6 +9,12 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  @media(max-width: 767px) {
+    position: fixed;
+    z-index: 2;
+    margin-bottom: 32px;
+    background-color: #eaf2df;
+  }
 `;
 
 export const LogoContainer = styled(Link)`
@@ -28,4 +34,8 @@ export const OptionsContainer = styled.div`
 export const OptionLink = styled(Link)`
     padding: 10px 15px;
     cursor: pointer;
+    @media(max-width: 767px) {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 `;

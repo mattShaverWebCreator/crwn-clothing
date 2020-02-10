@@ -14,6 +14,20 @@
 
     & .collection-item {
       margin-bottom: 30px;
+      @media(max-width: 767px){
+        button {
+          margin-bottom: 16px;
+        }
+      }
     }
+
+    @media(max-width: 767px) {
+      grid-template-columns: initial;
+      grid-template-rows: 1fr;
+    }
+  }
+
+  @media(max-width: 767px) {
+    padding: 32px;
   }
 }

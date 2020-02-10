@@ -4,7 +4,6 @@ import { withRouter } from 'react-router-dom';
 
 import './menu-item.styles.scss';
 
-
 const MenuItem = ({ title, imageUrl, size, history, match, linkUrl }) => (
     <div 
         className={`${size} menu-item`} onClick={() => history.push(`${match.url}${linkUrl}`)}
@@ -22,6 +21,5 @@ const MenuItem = ({ title, imageUrl, size, history, match, linkUrl }) => (
         </div>
     </div>
 );
-
 
 export default withRouter(MenuItem);
