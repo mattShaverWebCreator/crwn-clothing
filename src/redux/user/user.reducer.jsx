@@ -1,6 +1,5 @@
 import { UserActionTypes } from './user.types.js';
 
-
 const INITIAL_STATE = {
     currentUser: null,
     error: null
@@ -31,6 +30,5 @@ const userReducer = (state = INITIAL_STATE, action) => {
             return state;   
     }
 };
-
 
 export default userReducer;

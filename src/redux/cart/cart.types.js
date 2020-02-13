@@ -6,5 +6,4 @@ export const cartActionTypes = {
     CLEAR_CART: 'CLEAR_CART'    
 }
 
-
 export default cartActionTypes;

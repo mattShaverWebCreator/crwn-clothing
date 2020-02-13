@@ -23,7 +23,6 @@ import {
     getCurrentUser
 } from '../../firebase/firebase.utils';
 
-
 export function* getSnapshotFromUserAuth(userAuth, additionalData) {
     try {
     const userRef = yield call(

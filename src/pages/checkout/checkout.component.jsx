@@ -20,7 +20,6 @@ const CheckoutPage = ({cartItems, total}) => (
       <div className="header-block">
         <span>Quantity</span>
       </div>
-
       <div className="header-block">
         <span>Price</span>
       </div>
@@ -52,6 +51,5 @@ const mapStateToProps = createStructuredSelector({
     cartItems: selectCartItems,
     total: selectCartTotal
 })
-
 
 export default connect(mapStateToProps)(CheckoutPage);

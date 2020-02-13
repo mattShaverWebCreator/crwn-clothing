@@ -12,7 +12,7 @@ const WithSpinner = (WrappedComponent => {
             <WrappedComponent {...otherProps} />
         );
     };
-return Spinner;
+    return Spinner;
 });
 
 export default WithSpinner;
