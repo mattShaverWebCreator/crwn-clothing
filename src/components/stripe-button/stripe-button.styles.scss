@@ -1,4 +1,4 @@
-.stripe-button span {
+.stripe-btn span {
     background: none !important;
     border: none !important;
     text-shadow: none !important;
@@ -16,7 +16,7 @@
     }
 }
 
-.stripe-button {
+.stripe-btn {
     min-width: 165px !important;
     width: auto !important;
     height: 50px !important;
@@ -61,6 +61,7 @@
 }
 
 .stripe-button-el {
+    display: none;
     min-width: 165px !important;
     width: auto !important;
     height: 50px !important;
