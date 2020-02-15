@@ -1,43 +1,56 @@
 .checkout-page {
-  width: 55%;
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px auto 0;
-
-  .checkout-header {
-    width: 100%;
-    padding: 10px 0;
+    min-height: 90vh;
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid darkgrey;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    padding-top: 64px;
 
-    .header-block {
-      text-transform: capitalize;
-      width: 23%;
+    .checkout-header {
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ebd9ae;
 
-      &:last-child {
-        width: 8%;
-      }
+        .header-block {
+            text-transform: capitalize;
+            width: 23%;
+            color: #ebd9ae;
+
+            &:last-child {
+                width: 8%;
+            }
+        }
     }
-  }
 
-  .total {
-    margin-top: 30px;
-    margin-left: auto;
-    font-size: 36px;
-  }
+    .total {
+        margin-top: 30px;
+        margin-left: auto;
+        font-size: 24px;
+        color: #ebd9ae;
+    }
 
-  button {
-    margin-left: auto;
-    margin-top: 50px;
-  }
+    .test-warning {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 16px;
+        color: #ebd9ae;
+    }
 
-  .text-warning {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 40px;
-    color: red;
-  }
+    .stripe {
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 64px;
+
+        @media(max-width: 767px) {
+            flex-flow: column;
+        }
+    }
+
+    @media(max-width: 767px) {
+        padding-top: 128px;
+    }
 }

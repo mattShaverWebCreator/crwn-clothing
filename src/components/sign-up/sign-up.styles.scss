@@ -1,9 +1,19 @@
 .sign-up {
-  display: flex;
-  flex-direction: column;
-  width: 380px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 64px;
 
-  .title {
-    margin: 10px 0;
-  }
+    .title {
+        margin: 10px 0;
+    }
+
+    .group .form-input {
+        color: #ebd9ae;
+        border-bottom: 1px solid #ebd9ae;
+    }
+
+    .group .form-input-label {
+        color: #ebd9ae;
+    }
 }

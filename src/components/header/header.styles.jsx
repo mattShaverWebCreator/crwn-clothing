@@ -7,32 +7,48 @@ export const HeaderContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  background-color: #F2F5FC;
+  box-shadow: 2px 2px 2px #EBD9AE;
   @media(max-width: 767px) {
     position: fixed;
     z-index: 2;
+    height: 80px;
     margin-bottom: 32px;
-    background-color: #eaf2df;
   }
 `;
 
+export const HeaderTitle = styled.div`
+    font-family: 'Open Sans Condensed';
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #ebd9ae;
+    position: absolute;
+    left: 128px;
+    top: 16px;
+    @media(max-width: 767px) {
+        display: none;
+    }
+;`
+
 export const LogoContainer = styled(Link)`
+    display: flex;
+    align-items: center;
     height: 100%;
     width: 70px;
-    padding: 25px;
+    padding-left: 64px;
 `;
 
 export const OptionsContainer = styled.div`
-    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    padding-right: 64px;
 `;
 
 export const OptionLink = styled(Link)`
     padding: 10px 15px;
     cursor: pointer;
+    color: #979EB0;
     @media(max-width: 767px) {
         padding-left: 8px;
         padding-right: 8px;

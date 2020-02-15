@@ -1,58 +1,79 @@
 .collection-item {
-  width: 22vw;
-  display: flex;
-  flex-direction: column;
-  height: 350px;
-  align-items: center;
-  position: relative;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: center;
+    margin-bottom: 80px;
 
-  .image {
-    width: 100%;
-    height: 95%;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 5px;
-  }
-
-  .custom-button {
-    width: 80%;
-    opacity: 0.7;
-    position: absolute;
-    top: 255px;
-    display: none;
-  }
-
-  &:hover {
     .image {
-      opacity: 0.8;
+        width: 80%;
+        height: 95%;
+        background-size: cover;
+        background-position: center;
+        @media (max-width: 767px) {
+            width: 100%;
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     }
 
     .custom-button {
-      opacity:  0.85;
-      display: flex;
+        border: 1px solid #ebd9ae;
+        color: #ebd9ae;
+        background-color: #fff;
+        &:hover {
+            background-color: #000;
+            border: 1px solid #000;
+            color: #fff;
+        }
     }
+
+    &:hover {
+        .image {
+            opacity: 0.8;
+        }
+
+        .custom-button {
+            opacity: 0.85;
+        }
+    }
+
+    .collection-footer {
+        width: 75%;
+        height: 5%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        margin-bottom: 32px;
+        margin-top: 16px;
+
+        .name,
+        .price {
+            color: #ebd9ae;
+        }
+
+        @media(max-width: 767px) {
+            width: 280px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        margin: 32px;
+        width: auto;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 64px;
+        &:hover {
+            .image {
+                opacity: 1;
+            }
     
-  }
-
-  .collection-footer {
-    width: 100%;
-    height: 5%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-
-    .name {
-      width: 90%;
-      margin-bottom: 15px;
+            .custom-button {
+                opacity: 1;
+            }
+        }
     }
-
-    .price {
-      width: 10%;
-    }
-  }
-
-  @media(max-width: 767px) {
-    width: 100%;
-  }
 }
-

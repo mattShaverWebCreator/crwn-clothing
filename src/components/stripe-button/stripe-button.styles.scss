@@ -1,0 +1,82 @@
+.stripe-button span {
+    background: none !important;
+    border: none !important;
+    text-shadow: none !important;
+    color: #ebd9ae !important;
+    font-family: 'Open Sans Condensed', Arial !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    &:hover {
+        background: none !important;;
+        border: none !important;
+        color: #fff !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+    }
+}
+
+.stripe-button {
+    min-width: 165px !important;
+    width: auto !important;
+    height: 50px !important;
+    background: none !important;;
+    background-color: #fff !important;
+    border: 1px solid #ebd9ae !important;
+    font-weight: bolder !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    color: #ebd9ae !important;
+    &:hover {
+        background: none !important;;
+        background-color: #000 !important;
+        border: 1px solid #000 !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        color: #fff !important;
+    }
+
+    @media(max-width: 767px) {
+        margin-bottom: 32px;
+    }
+}
+
+
+.stripe-button-el span {
+    background: none !important;
+    border: none !important;
+    text-shadow: none !important;
+    color: #ebd9ae !important;
+    font-family: 'Open Sans Condensed', Arial !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    &:hover {
+        background: none !important;;
+        border: none !important;
+        color: #fff !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+    }
+}
+
+.stripe-button-el {
+    min-width: 165px !important;
+    width: auto !important;
+    height: 50px !important;
+    background: none !important;;
+    background-color: #fff !important;
+    border: 1px solid #ebd9ae !important;
+    font-weight: bolder !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    color: #ebd9ae !important;
+    &:hover {
+        background: none !important;;
+        background-color: #000 !important;
+        border: 1px solid #000 !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        color: #fff !important;
+    }
+}

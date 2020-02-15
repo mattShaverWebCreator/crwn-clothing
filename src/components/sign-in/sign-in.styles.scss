@@ -1,7 +1,8 @@
 .sign-in {
-    width: 380px;
+    width: auto;
     display: flex;
     flex-direction: column;
+    padding: 64px;
 
     .title {
         margin: 10px 0;
@@ -13,19 +14,24 @@
     }
     
     @media(max-width: 767px) { 
-        width: 100%;
+        padding-top: 96px;
 
-        .form-input {
-            padding: 0;
-        }
-
-        .form-input-label {
-            padding: 0;
+        .buttons {
+            flex-direction: column;
         }
 
         button {
             margin-bottom: 16px;
             width: 100%;
         }
+    }
+
+    .group .form-input {
+        color: #ebd9ae;
+        border-bottom: 1px solid #ebd9ae;
+    }
+
+    .group .form-input-label {
+        color: #ebd9ae;
     }
 }
