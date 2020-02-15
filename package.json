@@ -27,13 +27,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "formatJS": "prettier --write --tab-width 4 \"src/**/*.js\"",
+    "formatJSX": "prettier --write --tab-width 4 \"src/**/*.jsx\"",
     "formatSCSS": "prettier --write --tab-width 4 \"src/**/*.scss\"",
     "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.js": [
-        "npm run formatJS",
+        "npm run formatJSX",
         "npm run formatSCSS",
         "git add"
     ]
