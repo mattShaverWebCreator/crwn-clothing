@@ -1,6 +1,8 @@
 .checkout-item {
+    display: grid;
     width: 100%;
-    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
     min-height: 100px;
     border-bottom: 1px solid #ebd9ae;
     padding: 15px 0;
@@ -8,18 +10,27 @@
     align-items: center;
 
     .image-container {
-        width: 23%;
-        padding-right: 15px;
-
         img {
-            width: 100%;
+            width: 128px;
             height: 100%;
+            @media(min-width: 768px) and (max-width: 991px) {
+                width: 96px;
+            }
+
+            @media(max-width: 767px) {
+                width: 64px;
+            }
         }
     }
+
+    .image-container, .name, .quantity, .price, .remove-button  {
+        display: flex;
+        justify-content: center;
+    }
+
     .name,
     .quantity,
     .price {
-        width: 23%;
         color: #ebd9ae;
     }
 
@@ -36,7 +47,13 @@
     }
 
     .remove-button {
-        padding-left: 12px;
         cursor: pointer;
+    }
+
+    @media(max-width: 767px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .name {
+            display: none;
+        }
     }
 }

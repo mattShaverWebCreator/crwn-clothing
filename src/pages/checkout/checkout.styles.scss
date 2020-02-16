@@ -7,20 +7,21 @@
     padding-top: 64px;
 
     .checkout-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         width: 100%;
         padding: 10px 0;
-        display: flex;
-        justify-content: space-between;
         border-bottom: 1px solid #ebd9ae;
 
         .header-block {
+            display: flex;
+            justify-content: center;
             text-transform: capitalize;
-            width: 23%;
             color: #ebd9ae;
+        }
 
-            &:last-child {
-                width: 8%;
-            }
+        @media(max-width: 767px) {
+            display: none;
         }
     }
 

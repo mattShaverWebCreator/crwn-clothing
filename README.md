@@ -15,13 +15,16 @@ React Hooks, Styled Components.
 
 ### Not Complete Yet: 
 
-1. Mobile Styles
-2. Tablet Styles
-3. Contact Form
+1. Contact Form
 
-This Repo is seperated with a release, development branch coming off of master. The release branch deploys to Heroku. 
+This Repo is seperated with a release, development branch coming off of master. The release, development branches deploy to Heroku. 
 
-The release branch is currently quite a bit behind the development branch. 
+Once a development cycle is completed, the release branch is rebased with development.
+
+The release branch, development branch automatically deploy to Heroku whenever new commits are made. 
+
+Development: https://crwn-clothing-devapp.herokuapp.com/
+Release: https://crwn-clothing-prodapp.herokuapp.com/
 
 The Development branch may sometimes have errors present. 
 
